@@ -13,11 +13,17 @@
     <canvas id="canvas"></canvas>
     <script>
       class Plan{
-
+        constructor(x,y,str){}
       }
       var gstat = {
-        back:""
+        back:"",
+        plans:[
+          [new Plan(-1,1,""), new Plan(0,1,""), new Plan(1,1,""), ],
+          [new Plan(-1,0,""), new Plan(0,0,""), new Plan(1,0,""), ],
+          [new Plan(-1,-1,""), new Plan(0,-1,""), new Plan(1,-1,"")], 
+        ],
       }
+      var view = [0,0]
     </script>
   </body>
 </html>
